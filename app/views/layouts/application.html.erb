@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>FirstApp2</title>
+    <title>FirstApp</title>
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
 
@@ -10,6 +10,10 @@
   </head>
 
   <body>
+    <%= link_to 'one', pages_one_url, class: 'navbar-inverse' %>
+    <%= link_to 'two', pages_two_url, class: 'navbar-inverse' %>
+    <%= link_to 'three', pages_three_url, class: 'navbar-inverse' %>
+
     <%= yield %>
   </body>
 </html>
